@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Triangulo.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Testing_P2</a> &gt; <a href="index.source.html" class="el_package">ISO2_2022_BC02_Testing_P2.Testing_P2</a> &gt; <span class="el_source">Triangulo.java</span></div><h1>Triangulo.java</h1><pre class="source lang-java linenums">package ISO2_2022_BC02_Testing_P2.Testing_P2;
+
+public class Triangulo extends Exception {
+	private int l1, l2, l3; // lados en cm
+	private int a1, a2, a3; // �ngulos en grados dec
+
+	private segunAngulos tipoAngulos;
+	private segunLados tipoLados;
+
+	public Triangulo(String l1, String l2, String l3, String a1, String a2, String a3)
+<span class="fc" id="L11">			throws numCero, numNegativo, anguloNoValido {</span>
+<span class="fc" id="L12">		this.setL1(l1);</span>
+<span class="fc" id="L13">		this.setL2(l2);</span>
+<span class="fc" id="L14">		this.setL3(l3);</span>
+<span class="fc" id="L15">		this.setA1(a1);</span>
+<span class="fc" id="L16">		this.setA2(a2);</span>
+<span class="fc" id="L17">		this.setA3(a3);</span>
+<span class="fc" id="L18">	}</span>
+
+	public int getL1() {
+<span class="fc" id="L21">		return l1;</span>
+	}
+
+	public void setL1(String l1) throws numCero, numNegativo {
+<span class="fc" id="L25">		this.l1 = comprobarLado(l1);</span>
+<span class="fc" id="L26">	}</span>
+
+	public int getL2() {
+<span class="fc" id="L29">		return l2;</span>
+	}
+
+	public void setL2(String l2) throws numCero, numNegativo {
+<span class="fc" id="L33">		this.l2 = comprobarLado(l2);</span>
+<span class="fc" id="L34">	}</span>
+
+	public int getL3() {
+<span class="fc" id="L37">		return l3;</span>
+	}
+
+	public void setL3(String l3) throws numCero, numNegativo {
+<span class="fc" id="L41">		this.l3 = comprobarLado(l3);</span>
+<span class="fc" id="L42">	}</span>
+
+	public int getA1() {
+<span class="fc" id="L45">		return a1;</span>
+	}
+
+	public void setA1(String a1) throws anguloNoValido, numNegativo {
+<span class="fc" id="L49">		this.a1 = comprobarAngulo(a1);</span>
+<span class="fc" id="L50">	}</span>
+
+	public int getA2() {
+<span class="fc" id="L53">		return a2;</span>
+	}
+
+	public void setA2(String a2) throws anguloNoValido, numNegativo {
+<span class="fc" id="L57">		this.a2 = comprobarAngulo(a2);</span>
+<span class="fc" id="L58">	}</span>
+
+	public int getA3() {
+<span class="fc" id="L61">		return a3;</span>
+	}
+
+	public void setA3(String a3) throws anguloNoValido, numNegativo {
+<span class="fc" id="L65">		this.a3 = comprobarAngulo(a3);</span>
+		;
+<span class="fc" id="L67">	}</span>
+
+	public segunAngulos getTipoAngulos() {
+<span class="fc" id="L70">		return tipoAngulos;</span>
+	}
+
+	public void setTipoAngulos(segunAngulos tipoAngulos) {
+<span class="fc" id="L74">		this.tipoAngulos = tipoAngulos;</span>
+<span class="fc" id="L75">	}</span>
+
+	public segunLados getTipoLados() {
+<span class="fc" id="L78">		return tipoLados;</span>
+	}
+
+	public void setTipoLados(segunLados tipoLados) {
+<span class="fc" id="L82">		this.tipoLados = tipoLados;</span>
+<span class="fc" id="L83">	}</span>
+
+	public int comprobarLado(String posibleLado) throws numCero, numNegativo {
+<span class="fc" id="L86">		int lado = comprobarInt(posibleLado);</span>
+
+<span class="fc bfc" id="L88" title="All 2 branches covered.">		if (lado == 0)</span>
+<span class="fc" id="L89">			throw new numCero(&quot;El lado no puede medir cero.&quot;);</span>
+
+<span class="fc" id="L91">		return lado;</span>
+	}
+
+	public int comprobarAngulo(String posibleAngulo) throws anguloNoValido, numNegativo {
+<span class="fc" id="L95">		int angulo = comprobarInt(posibleAngulo);</span>
+
+<span class="pc bpc" id="L97" title="3 of 4 branches missed.">		if (angulo &lt; 0 &amp;&amp; angulo &gt; 360)</span>
+<span class="nc" id="L98">			throw new anguloNoValido(&quot;El angulo debe de encontrarse en el intervalo (0,360).&quot;);</span>
+
+<span class="fc bfc" id="L100" title="All 4 branches covered.">		if (angulo == 0 || angulo == 180)</span>
+<span class="fc" id="L101">			throw new anguloNoValido(&quot;El ángulo no puede ser 0.&quot;);</span>
+
+<span class="fc" id="L103">		return angulo;</span>
+	}
+
+	public int comprobarInt(String posibleInt) throws numNegativo {
+<span class="fc" id="L107">		int resultado = 0;</span>
+
+		try {
+<span class="fc" id="L110">			resultado = Integer.parseInt(posibleInt);</span>
+<span class="fc" id="L111">		} catch (NumberFormatException excepcion) {</span>
+<span class="fc" id="L112">			System.out.println(&quot;No es un numero entero&quot;);</span>
+<span class="fc" id="L113">		}</span>
+
+<span class="fc bfc" id="L115" title="All 2 branches covered.">		if (resultado &lt; 0)</span>
+<span class="fc" id="L116">			throw new numNegativo(&quot;El número no puede ser negativo&quot;);</span>
+
+<span class="fc" id="L118">		return resultado;</span>
+	}
+
+	public segunAngulos clasificarPorAngulos(int a1, int a2, int a3) {
+
+<span class="fc" id="L123">		segunAngulos tipoAngulo = null;</span>
+
+<span class="fc bfc" id="L125" title="All 24 branches covered.">		if ((a1 &gt; 90 &amp;&amp; a1 &lt; 180) || (a1 &gt; 180 &amp;&amp; a1 &lt; 269) || (a2 &gt; 90 &amp;&amp; a2 &lt; 180) || (a2 &gt; 180 &amp;&amp; a2 &lt; 269)</span>
+				|| (a3 &gt; 90 &amp;&amp; a3 &lt; 180) || (a3 &gt; 180 &amp;&amp; a3 &lt; 269))
+<span class="fc" id="L127">			tipoAngulo = segunAngulos.OBTUSANGULO;</span>
+<span class="pc bpc" id="L128" title="1 of 12 branches missed.">		else if (a1 == 90 || a1 == 270 || a2 == 90 || a2 == 270 || a3 == 90 || a3 == 270)</span>
+<span class="fc" id="L129">			tipoAngulo = segunAngulos.RECTANGULO;</span>
+		else
+<span class="nc" id="L131">			tipoAngulo = segunAngulos.ACUTANGULO;</span>
+
+<span class="fc" id="L133">		return tipoAngulo;</span>
+	}
+
+	public segunLados clasificarPorLados(int l1, int l2, int l3) {
+
+<span class="fc" id="L138">		segunLados tipoLados = null;</span>
+<span class="fc bfc" id="L139" title="All 4 branches covered.">		if (l1 == l2 &amp;&amp; l2 == l3)</span>
+<span class="fc" id="L140">			tipoLados = segunLados.EQUILATERO;</span>
+<span class="fc bfc" id="L141" title="All 6 branches covered.">		else if (l1 != l2 &amp;&amp; l2 != l3 &amp;&amp; l1 != l3)</span>
+<span class="fc" id="L142">			tipoLados = segunLados.ESCALENO;</span>
+		else
+<span class="fc" id="L144">			tipoLados = segunLados.ISOSCELES;</span>
+
+<span class="fc" id="L146">		return tipoLados;</span>
+	}
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
