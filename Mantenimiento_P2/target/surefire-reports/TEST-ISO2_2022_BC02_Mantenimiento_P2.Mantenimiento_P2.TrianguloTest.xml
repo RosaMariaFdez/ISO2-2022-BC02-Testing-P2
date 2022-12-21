@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="61" failures="0" name="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" time="0.038" errors="0" skipped="0">
+  <properties>
+    <property name="jansi.mode" value="force"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_202\jre\bin"/>
+    <property name="java.vm.version" value="25.202-b08"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\mohae\eclipse-workspace\Mantenimiento_P2"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="ES"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\mohae\eclipse-workspace\Mantenimiento_P2"/>
+    <property name="java.runtime.version" value="1.8.0_202-b08"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_202\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\mohae\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\Users\mohae\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf7384779168301164537.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_202\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_202\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\apache-maven-3.8.6\bin;C:\Program Files\Java\jdk1.8.0_202\bin;C:\Program Files\Java\jdk1.8.0_202;C:\Program Files\Java\jdk1.8.0_202\bin;C:\Program Files\apache-maven-3.8.6\bin;C:\Program Files\apache-maven-3.8.6;;C:\Users\mohae\AppData\Local\Programs\Microsoft VS Code\bin;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\mohae"/>
+    <property name="user.timezone" value="Europe/Paris"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="mohae"/>
+    <property name="java.class.path" value="C:\Users\mohae\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.602.20221122-2114\jars\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_202\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B -Dstyle.color=always site:site"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="es"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_202"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_202\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_202\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_202\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Users\mohae\eclipse-workspace\Mantenimiento_P2\EMBEDDED"/>
+    <property name="style.color" value="always"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="m2e.build.project.data.socket.port" value="52555"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testSetA2numMas360" time="0.017"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testComprobarIntString" time="0"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testSetA1numMas360" time="0"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testSetL1numCero" time="0"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testSetL1numLong" time="0"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testSetA2String" time="0"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testSetA3num_0_180" time="0"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testSetA2numLong" time="0"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testSetA3numEnteroPositivo" time="0"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testSetA2num_0_180" time="0.001"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testClasificarPorLados" time="0.001"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testComprobarLadoString" time="0"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testSetA1num_0_180" time="0"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testGetA1" time="0.001"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testGetA2" time="0"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testGetA3" time="0.001"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testGetL1" time="0"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testGetL2" time="0.001"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testGetL3" time="0"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testSetA3String" time="0.001"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testSetA2numEnteroPositivo" time="0"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testSetL1String" time="0"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testComprobarIntPositivo" time="0.001"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testComprobarIntNegativo" time="0.001"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testSetA1numNegativo" time="0"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testSetTipoAngulos" time="0.001"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testGetTipoLados" time="0"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testSetA2numNegativo" time="0"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testSetA3numNegativo" time="0"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testTriangulo" time="0"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testSetL2numCero" time="0.001"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testSetL2numLong" time="0"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testSetA3numLong" time="0.001"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testComprobarAngulo0_180" time="0"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testSetL2String" time="0.001"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testSetA1numEnteroPositivo" time="0.001"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testSetL1numPositivo" time="0"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testSetL2numPositivo" time="0"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testComprobarAnguloString" time="0"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testSetL1numNegativo" time="0.001"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testSetL3numPositivo" time="0"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testSetL2numNegativo" time="0"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testSetA1numLong" time="0"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testClasificarPorAngulos" time="0.001"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testSetL3numNegativo" time="0"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testSetL3String" time="0.001"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testComprobarIntCero" time="0"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testComprobarIntLong" time="0.001"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testComprobarLadoCero" time="0"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testComprobarLadoLong" time="0"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testSetTipoLados" time="0"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testGetTipoAngulos" time="0"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testComprobarAnguloLong" time="0"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testSetA1String" time="0.001"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testSetL3numCero" time="0"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testSetL3numLong" time="0.001"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testComprobarAnguloPositivo" time="0"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testComprobarLadoPositivo" time="0.001"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testComprobarAnguloNegativo" time="0"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testComprobarLadoNegativo" time="0.001"/>
+  <testcase classname="ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest" name="testSetA3numMas360" time="0"/>
+</testsuite>

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: ISO2_2022_BC02_Mantenimiento_P2.Mantenimiento_P2.TrianguloTest
+-------------------------------------------------------------------------------
+Tests run: 61, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.256 sec
